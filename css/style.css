@@ -13,10 +13,53 @@
     color: var(--main-color);
 }
 
+header {
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#logo_header {
+    width: 7%;
+    height:fit-content;
+
+}
+
+.logo_menu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#menu_header {
+    display: flex;
+    flex-direction: row;
+}
+
+.bouton_header {
+    background-color: transparent;
+    border-color: transparent;
+}
+.bouton_header:hover {
+    border-color: rgb(0, 174, 255);
+  }
+
+
+/*#hebergement {
+    display: flex;
+}
+
+#activite {
+    display: flex;
+}*/
+
 body {
     display: flex;
     justify-content: center;
 }
+
+
 
 .main-container {
     width: 100%;
