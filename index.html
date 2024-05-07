@@ -12,6 +12,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="js/function.js">
 </head>
 
 <body>
@@ -32,20 +33,48 @@
 
         <main>
             <div class = "recherche_localisation">
-                <p>logo,loc,bouton</p>
-
+                <img src="image/logo/search_logo.png" alt="logo de recherche">
+                <input type="search" name="barre" id="barre_recherche">
+                <input type="image" name="search_button" id="search_button" alt = "search_button" src = "image/logo/search_button.png">
             </div>
-            <div class = "filtre">
-                <p>bouton filtre </p>
+            <div class = "parent_filter">
+                <div id = "txt_filter">
+                    <p><b>Filtres</b></p>
+                </div>
+                <div class = "type_filter">
+                    <div class = "filter" id = "economic">
+                        <button type ="button" class = button_filter><img src="image/logo/dollar_logo.png" alt="" class = "logo_button_filter">Économique</button>
+                    </div>
+
+                    <div class = "filter" id = "family">
+                        <button type ="button" class = button_filter><img src="image/logo/family_logo.png" alt="logo_family" class = "filter_logo">Familial</button>
+                    </div>
+
+                    <div class = "filter" id = "romantic">
+                        <button type ="button" class = button_filter><img src="image/logo/romantic_logo.png" alt="logo_heart" class = "filter_logo">Romantique</button>
+                    </div>
+
+                    <div class = "filter" id = "pepite">
+                        <button type ="button" class = button_filter><img src="image/logo/fire_logo.png" alt="logo_pepite" class = "filter_logo">Nos pépites</button>
+                    </div>
+                </div>
             </div>
             <div class = "info_nb_logement">
-                <p> logo</p>
-                <p> Plus de 500 logements sont disponibles dans cette ville</p>
+                <img src="image/logo/i_logo.png" alt="Information" id = "i_logo">
+                <p id = "txt_info"> Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
+                    <div class = "hebergement_title">
+                        <h2 class = "section-title">Hébergement à Marseille</h2>
 
+                    </div>
+                    <div class = "hergement_card">
 
+                    </div>
+                    <div>
+
+                    </div>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">

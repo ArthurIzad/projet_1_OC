@@ -13,6 +13,67 @@
     color: var(--main-color);
 }
 
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.recherche_localisation {
+    display: flex;
+
+}
+
+#search_button {
+    border : 0px ;
+    background-color: #0065FC;
+    border-radius: 0% 15% 15% 0% / 0% 33% 33% 0%  ;
+
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutral-star {
+    color: var(--main-bg-color)
+}
+
+/************* Header ********************/
 header {
     display : flex;
     flex-direction: column;
@@ -42,63 +103,60 @@ header {
     border-color: transparent;
 }
 .bouton_header:hover {
-    border-color: rgb(0, 174, 255);
-  }
+    color: #0065FC;
+    border-top-color: #0065FC;
+}
 
+/*********** Barre de recherche et filtres ****************/
 
-/*#hebergement {
+.parent_filter{
     display: flex;
+    flex-wrap: wrap;
+    padding: 1em 2em 1em;
 }
 
-#activite {
+#txt_filter{
+    margin: 0% 5% 0% 0%;
+}
+
+.button_filter{
     display: flex;
-}*/
+    align-items: center;
+    border-color: #D9D9D9;
+    background-color: transparent;
+    border-radius: 15px;
+}
 
-body {
+.button_filter:hover{
+    background-color: #DEEBFF;
+}
+
+.type_filter{
     display: flex;
-    justify-content: center;
+    flex-flow: wrap;
 }
 
-
-
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+.filter{
+    display: flex;
+    align-items: center;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+.logo_button_filter{
+    padding;: 0% 5px 0% 15px
 }
 
-.section-title {
-    margin: 0;
-    font-size: 22px;
+.info_nb_logement{
+    display: flex;
+    align-items: center;
 }
 
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+#i_logo{
+    width: 24px;
+    height: 24px;
 }
 
-.card img {
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 16px;
-}
-
-.euro {
-    font-weight: 700;
-}
-
-.neutral-star {
-    color: var(--main-bg-color)
+#txt_info{
+    padding: 0px 0px 0px 10px;
 }
 
 /****** Hebergements And Populaires ***********/
