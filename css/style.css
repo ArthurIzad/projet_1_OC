@@ -142,7 +142,7 @@ header {
 }
 
 .logo_button_filter{
-    padding;: 0% 5px 0% 15px
+    padding: 0% 5px 0% 15px;
 }
 
 .info_nb_logement{
@@ -175,6 +175,57 @@ header {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergement_card{
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.card_indiv{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid white 5px;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+
+}
+
+
+.hebergement_img{
+    width: 250.33px;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    /* border: solid white 5px; */
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.txt_hebergement_card{
+    margin-left: 8px;
+
+}
+
+.txt_hebergement_card_bis{
+    line-height: 20px;
+    margin-left: 8px;
+
+}
+
+.hebergement_star{
+    display: flex;
+    flex-direction: row;
+    margin-left: 8px;
+    
+
+}
+
+.ranking_star{
+    height: 13.25px;
+    width: 14.29px;
 }
 
 /****** Populaires ***********/
@@ -220,6 +271,32 @@ header {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+
+/******************* Activity *************************/
+
+.activity_card_global{
+    display: flex;
+}
+
+
+
+
+.activity_img{
+    width: 297.5px;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+    border: solid white 5px;
+}
+
+
+/********************** Footer **************************/
+.footer_bis{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start ;
 }
 
 
