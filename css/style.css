@@ -206,7 +206,13 @@ header {
 
 .txt_hebergement_card{
     margin-left: 8px;
+    
 
+}
+
+.txt_hebergement_card p{
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 .txt_hebergement_card_bis{
@@ -278,6 +284,7 @@ header {
 
 .activity_card_global{
     display: flex;
+    flex-wrap: wrap;
 }
 
 
