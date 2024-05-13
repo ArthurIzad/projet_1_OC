@@ -33,9 +33,11 @@
 
         <main>
             <div class="recherche_localisation">
-                <img src="image/logo/search_logo.png" alt="logo de recherche">
-                <input type="search" name="barre" id="barre_recherche">
-                <input type="image" name="search_button" id="search_button" alt = "search_button" src = "image/logo/search_button.png">
+                <form action="" method="get">
+                    <img src="image/logo/search_logo.png" alt="logo de recherche">
+                    <input type="search" name="barre" id="barre_recherche" placeholder="Localisation">
+                    <input type="image" name="search_button" id="search_button" alt = "search_button" src = "image/logo/search_button.png">
+                </form>
             </div>
             <div class="parent_filter">
                 <div id = "txt_filter">
@@ -43,19 +45,19 @@
                 </div>
                 <div class="type_filter">
                     <div class="filter" id = "economic">
-                        <button type ="button" class=button_filter><img src="image/logo/dollar_logo.png" alt="" class="logo_button_filter">Économique</button>
+                        <button type="button" class="button_filter"><img src="image/logo/dollar_logo.png" alt="" class="logo_button_filter"><b>Économique</b></button>
                     </div>
 
                     <div class="filter" id = "family">
-                        <button type ="button" class=button_filter><img src="image/logo/family_logo.png" alt="logo_family" class="filter_logo">Familial</button>
+                        <button type="button" class="button_filter"><img src="image/logo/family_logo.png" alt="logo_family" class="filter_logo"><b>Familial</b></button>
                     </div>
 
                     <div class="filter" id = "romantic">
-                        <button type ="button" class=button_filter><img src="image/logo/romantic_logo.png" alt="logo_heart" class="filter_logo">Romantique</button>
+                        <button type="button" class="button_filter"><img src="image/logo/romantic_logo.png" alt="logo_heart" class="filter_logo"><b>Romantique</b></button>
                     </div>
 
                     <div class="filter" id = "pepite">
-                        <button type ="button" class=button_filter><img src="image/logo/fire_logo.png" alt="logo_pepite" class="filter_logo">Nos pépites</button>
+                        <button type="button" class="button_filter"><img src="image/logo/fire_logo.png" alt="logo_pepite" class="filter_logo"><b>Nos pépites</b></button>
                     </div>
                 </div>
             </div>

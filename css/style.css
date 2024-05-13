@@ -19,17 +19,7 @@ body {
     justify-content: center;
 }
 
-.recherche_localisation {
-    display: flex;
 
-}
-
-#search_button {
-    border : 0px ;
-    background-color: #0065FC;
-    border-radius: 0% 15% 15% 0% / 0% 33% 33% 0%  ;
-
-}
 
 .main-container {
     width: 100%;
@@ -77,7 +67,8 @@ a {
 header {
     display : flex;
     flex-direction: column;
-    justify-content: space-between;
+    
+    max-width: 1440px;
 
 }
 
@@ -90,12 +81,18 @@ header {
 .logo_menu {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+}
 
+#logo_header{
+    width: 8%;
 }
 
 #menu_header {
     display: flex;
     flex-direction: row;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .bouton_header {
@@ -107,29 +104,85 @@ header {
     border-top-color: #0065FC;
 }
 
+.txt_entete h3{
+    margin-top: 40px;
+    margin-bottom: 4px;
+}
+
+.txt_entete p{
+    margin-top: 6px;
+    margin-bottom: 35px;
+}
+
+
+
 /*********** Barre de recherche et filtres ****************/
+
+
+.recherche_localisation {
+    display: flex ;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 0;
+}
+
+.recherche_localisation img{
+    width: 8%;
+    height: auto;
+}
+
+#search_button {
+    border : 0px ;
+    background-color: #0065FC;
+    border-radius: 0% 15% 15% 0% / 0% 33% 33% 0%  ;
+    width: 20%;
+    height: auto;
+
+}
+
 
 .parent_filter{
     display: flex;
     flex-wrap: wrap;
-    padding: 1em 2em 1em;
+    align-items: center;
+    margin-top: 20px;
 }
 
 #txt_filter{
-    margin: 0% 5% 0% 0%;
+    margin-right: 20px;
 }
 
 .button_filter{
     display: flex;
     align-items: center;
+    justify-content: center;
+    align-self: center;
     border-color: #D9D9D9;
     background-color: transparent;
-    border-radius: 15px;
+    border-radius: 30px;
+    border: solid #D9D9D9 3px;
+    margin-top: 7px;
 }
 
 .button_filter:hover{
     background-color: #DEEBFF;
 }
+
+.button_filter img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.button_filter b{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 6px;
+    margin-right: 20px;
+}
+
 
 .type_filter{
     display: flex;
@@ -139,15 +192,13 @@ header {
 .filter{
     display: flex;
     align-items: center;
-}
-
-.logo_button_filter{
-    padding: 0% 5px 0% 15px;
+    margin-right: 20px;
 }
 
 .info_nb_logement{
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 #i_logo{
@@ -211,8 +262,13 @@ header {
 }
 
 .txt_hebergement_card p{
-    margin-top: 3px;
+    margin-top: 10px;
     margin-bottom: 3px;
+}
+
+.txt_hebergement_card b{
+    margin-top: 3px;
+    margin-bottom: 100px;
 }
 
 .txt_hebergement_card_bis{
@@ -225,8 +281,7 @@ header {
     display: flex;
     flex-direction: row;
     margin-left: 8px;
-    
-
+    margin-top: 10px;
 }
 
 .ranking_star{
