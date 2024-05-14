@@ -116,16 +116,20 @@ header {
 
 
 
-/*********** Barre de recherche et filtres ****************/
+/*********** Barre de recherche ****************/
 
 
 .recherche_localisation {
     display: flex ;
-    justify-content: flex-start;
     align-items: center;
+    align-self: flex-end;
 
     font-size: 0;
 }
+
+.recherche_localisation form{
+}
+
 
 .recherche_localisation img{
     width: 8%;
@@ -141,6 +145,7 @@ header {
 
 }
 
+/**************************** Filtres *********************/
 
 .parent_filter{
     display: flex;
@@ -170,16 +175,16 @@ header {
 }
 
 .button_filter img{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     margin-left: 10px;
-    margin-right: 8px;
+    margin-right: 6px;
 }
 
 .button_filter b{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 4px;
     margin-right: 20px;
 }
 
@@ -230,7 +235,8 @@ header {
 
 .hebergement_card{
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+     margin-top: 19px;
 }
 
 .card_indiv{
@@ -263,25 +269,20 @@ header {
 
 .txt_hebergement_card p{
     margin-top: 10px;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
 }
 
 .txt_hebergement_card b{
     margin-top: 3px;
-    margin-bottom: 100px;
 }
 
-.txt_hebergement_card_bis{
-    line-height: 20px;
-    margin-left: 8px;
-
-}
 
 .hebergement_star{
     display: flex;
     flex-direction: row;
     margin-left: 8px;
-    margin-top: 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 .ranking_star{
@@ -337,19 +338,42 @@ header {
 
 /******************* Activity *************************/
 
+.activity{
+    margin-top: 50px;
+}
+
+.txt_activity{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
 .activity_card_global{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+.activity_card{
+    /* border: transparent #D9D9D9; */
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 5px 1px #D9D9D9;
+    
+}
 
+.activity_card h5{
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 
+}
 
 .activity_img{
     width: 297.5px;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
-    border: solid white 5px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 
@@ -358,9 +382,19 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start ;
+    justify-content: flex-start;
+    margin-top: 50px;
 }
 
+.info_footer{
+    padding-right: 255px;
+    padding-left: 20px;
+    background-color: #D9D9D9;
+}
+
+.info_footer dt{
+    margin-bottom: 10px;
+}
 
 
 
