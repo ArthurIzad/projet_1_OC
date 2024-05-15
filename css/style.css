@@ -13,13 +13,10 @@
     color: var(--main-color);
 }
 
-
 body {
     display: flex;
     justify-content: center;
 }
-
-
 
 .main-container {
     width: 100%;
@@ -37,8 +34,6 @@ a {
     margin: 0;
     font-size: 22px;
 }
-
-
 
 .card {
     background-color: white;
@@ -134,6 +129,9 @@ header {
 .recherche_localisation img{
     width: 8%;
     height: auto;
+    box-shadow: 1px 1px 5px 1px #D9D9D9;
+    border-radius: 15px 0px 0px 15px;
+
 }
 
 #search_button {
@@ -142,7 +140,7 @@ header {
     border-radius: 0% 15% 15% 0% / 0% 33% 33% 0%  ;
     width: 20%;
     height: auto;
-
+    box-shadow: 1px 1px 5px 1px #D9D9D9;
 }
 
 /**************************** Filtres *********************/
@@ -236,7 +234,8 @@ header {
 .hebergement_card{
     display: flex;
     flex-wrap: wrap;
-     margin-top: 19px;
+    margin-top: 19px;
+
 }
 
 .card_indiv{
@@ -248,6 +247,8 @@ header {
     margin-right: 10px;
     margin-bottom: 25px;
     margin-top: 15px;
+    justify-content: space-evenly;
+    box-shadow: 1px 1px 5px 1px #D9D9D9;
 
 }
 
@@ -433,9 +434,76 @@ header {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .info_footer{
+        padding-right: 50px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
+
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /********** Header *************/
+
+    .logo_menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo_menu img{
+        width: 5%;
+        height: auto;
+    }
+
+    #menu_header{
+        margin-top: 50px;
+        border: solid;
+    }
+
+    /************** Barre de recherche *******/
+
+    /************* Filter *******************/
+    .type_filter{
+        justify-content: space-between;
+    }
+    .filter{
+        margin-right: 5px;
+    }
+
+    /********** Populaires ************/
+
+    .hebergements-and-populaires{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0px 0px 0px 0px;
+
+    }
+
+    .populaires-cards{
+        flex-direction: column;
+    }
+
+    /********** Hebergement ************/
+    .hebergement{
+        background-color: var(--filter-bg-color);
+        padding-left: 0px;
+        padding-right: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    
+    /********** Activite ************/
+
+
+    /********** Footer ************/
+    .footer_bis{
+        background-color: #D9D9D9;
+    }
+
+
 }
