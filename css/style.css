@@ -3,6 +3,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -62,9 +63,6 @@ a {
 header {
     display : flex;
     flex-direction: column;
-    
-    max-width: 1440px;
-
 }
 
 #logo_header {
@@ -114,6 +112,7 @@ header {
 /*********** Barre de recherche ****************/
 
 
+
 .recherche_localisation {
     display: flex ;
     align-items: center;
@@ -122,12 +121,14 @@ header {
     font-size: 0;
 }
 
+.form_localisation{
+    display: flex;
+}
+
 .recherche_localisation img{
     width: 8%;
     height: auto;
-    box-shadow: 1px 1px 5px 1px #D9D9D9;
     border-radius: 15px 0px 0px 15px;
-
 }
 
 #search_button {
@@ -253,7 +254,6 @@ header {
     width: 250.33px;
     height: 124px;
     border-radius: 20px 20px 0px 0px;
-    /* border: solid white 5px; */
     object-fit: cover;
     margin-bottom: 8px;
 }
@@ -351,7 +351,6 @@ header {
 }
 
 .activity_card{
-    /* border: transparent #D9D9D9; */
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 20px;
     box-shadow: 1px 1px 5px 1px #D9D9D9;
@@ -375,6 +374,10 @@ header {
 
 
 /********************** Footer **************************/
+footer{
+    background-color: #D9D9D9;
+}
+
 .footer_bis{
     display: flex;
     flex-direction: row;
@@ -439,10 +442,17 @@ header {
 /* Small devices (phones, less than 768px) */
 
 @media (max-width: 767.98px) {
-    .body{
+    body{
         margin-left: 0px;
         margin-right: 0px;
+        margin-top: 0px;
+        padding: 0px;
     }
+
+    /* main{
+        padding-left: 15px;
+        padding-right: 15px;
+    } */
 
     .main-container{
         margin-left: 0px;
@@ -467,6 +477,7 @@ header {
 
     #menu_header{
         width: 100%;
+        font: black;
         margin-top: 25px;
         background-color: solid;
         border: solid;
@@ -476,7 +487,7 @@ header {
         border-color: #D9D9D9;
         justify-content: space-around;
         padding-bottom: 10px;
-        /* align-items: center; */
+        align-items: center;
     }
 
 
@@ -486,16 +497,19 @@ header {
     }
 
     
-    }
-    .bouton_header: {
+    
+    .bouton_header:focus {
         color: #0065FC;
         border-bottom-color: #0065FC;
+    }
 
     /************** Barre de recherche *******/
 
     /************* Filter *******************/
     .type_filter{
         justify-content: space-between;
+        /* width: 1%;
+        height: auto; */
     }
     .filter{
         margin-right: 5px;
@@ -507,7 +521,13 @@ header {
         display: flex;
         flex-direction: column-reverse;
         padding: 0px 0px 0px 0px;
+        border-radius: 0px 0px 0px 0px;
     }
+
+    .hebergements-and-populaires section{
+        border-radius: 0px 0px 0px 0px;
+    }
+
 
 
     .populaires{
@@ -517,23 +537,59 @@ header {
         padding-left: 0px;
     }
 
-    .populaires-cards{
+    .populaires-cards {
         flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .populaires-cards a{
+        width: 100%;
     }
 
     /********** Hebergement ************/
-    .hebergement{
+    
+    .hebergements-and-populaires .hebergements{
         background-color: white;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding: 0px 0px 0px 0px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .hebergement_card{
         justify-content: center;
+        align-items: center;
     }
+
+    .card_indiv{
+        width: 100%;
+        height: auto;
+        margin-right: 0px;
+    }
+
+    .hebergement_img{
+        object-fit: cover;
+        width: 100%;
+
+    }
+
     
     /********** Activite ************/
+
+    .activity{
+        margin-top: 10px;
+    }
+
+    .activity_card{
+        width: 85%;
+        max-height: 2%;
+    }
+
+    .activity_img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
 
 
     /********** Footer ************/
