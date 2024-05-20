@@ -15,6 +15,7 @@
 }
 
 body {
+    margin-top: 0px;
     display: flex;
     justify-content: center;
 }
@@ -79,6 +80,7 @@ header {
 
 #logo_header{
     width: 8%;
+    margin-top: 20px;
 }
 
 #menu_header {
@@ -88,7 +90,12 @@ header {
     padding-top: 0px;
 }
 
+#hebergement{
+    padding-right: 50px;
+}
+
 .bouton_header {
+    padding-top: 10px;
     background-color: transparent;
     border-color: transparent;
 }
@@ -117,27 +124,42 @@ header {
     display: flex ;
     align-items: center;
     align-self: flex-end;
-
     font-size: 0;
 }
 
 .form_localisation{
     display: flex;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
 }
 
 .recherche_localisation img{
-    width: 8%;
+    width: 10%;
     height: auto;
     border-radius: 15px 0px 0px 15px;
 }
 
-#search_button {
-    border : 0px ;
-    background-color: #0065FC;
+#barre_recherche{
+    width: 60%;
+    font-size: 15px;
+    font-weight: 700;
+    border: transparent;
+    width: 60%;
+    color: black;
+    font-size: 7000;
+}
+
+
+#search_button_desktop{
+    border: 0px ;
     border-radius: 0% 15% 15% 0% / 0% 33% 33% 0%  ;
-    width: 20%;
+    width: 30%;
     height: auto;
     box-shadow: 1px 1px 5px 1px #D9D9D9;
+}
+
+#search_button_phone{
+    display: none;
 }
 
 /**************************** Filtres *********************/
@@ -156,8 +178,6 @@ header {
 .button_filter{
     display: flex;
     align-items: center;
-    justify-content: center;
-    align-self: center;
     border-color: #D9D9D9;
     background-color: transparent;
     border-radius: 30px;
@@ -285,6 +305,7 @@ header {
 .ranking_star{
     height: 13.25px;
     width: 14.29px;
+    padding-right: 5px;
 }
 
 /****** Populaires ***********/
@@ -333,14 +354,14 @@ header {
 }
 
 
-/******************* Activity *************************/
+/************* Activity ***************/
 
 .activity{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .txt_activity{
-    margin-left: 30px;
+    margin-left: 15px;
     margin-bottom: 20px;
 }
 
@@ -351,22 +372,23 @@ header {
 }
 
 .activity_card{
+    width: 23%;
     border-radius: 20px 20px 20px 20px;
-    margin-bottom: 20px;
     box-shadow: 1px 1px 5px 1px #D9D9D9;
-    
 }
 
 .activity_card h5{
     margin-left: 15px;
     margin-top: 10px;
     margin-bottom: 15px;
-
 }
 
 .activity_img{
-    width: 297.5px;
-    height: 380px;
+    /* width: 297.5px; */
+    /* height: 380px; */
+    width: 100%;
+    height: 88%;
+    object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
@@ -411,6 +433,11 @@ footer{
         width: 100%;
     }
 
+    .bouton_header:focus{
+        color: #0065FC;
+        border-top-color: #0065FC;
+    }
+
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -436,6 +463,24 @@ footer{
 
     .info_footer{
         padding-right: 50px;
+    }
+
+    /********** Activite ************/
+    .activity_card{
+        width: 22%;
+        height: 270px;
+    }
+
+    .activity_img{
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+    
+
+    .activity_card h5{
+        margin-top: 15px;
+        font-size: 14px;
     }
 }
 
@@ -478,41 +523,111 @@ footer{
     #menu_header{
         width: 100%;
         font: black;
-        margin-top: 25px;
-        background-color: solid;
-        border: solid;
-        border-top: transparent;
-        border-right: transparent;
-        border-left: transparent;
-        border-color: #D9D9D9;
+        margin-top: 30px;
         justify-content: space-around;
         padding-bottom: 10px;
         align-items: center;
     }
 
-
-
-    .txt_entete h3{
-        margin-top: 10px;
+    #menu_header dt{
+        width: 100%;
+        font: black;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
     }
 
-    
-    
-    .bouton_header:focus {
+    #hebergement{
+        padding-right: 0px;
+    }
+
+    .bouton_header{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border: solid;
+        border-top: transparent;
+        border-right: transparent;
+        border-left: transparent;
+        border-color: #D9D9D9;
+        padding-bottom: 10px;
+    }
+
+    .bouton_header:focus{
         color: #0065FC;
         border-bottom-color: #0065FC;
     }
 
+    .txt_entete{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .txt_entete h3{
+        margin-top: 10px;
+    }
+    
+    
+
     /************** Barre de recherche *******/
+    .form_localisation{
+        border: 2px solid #F2F2F2;
+        border-radius: 20px;
+    }
+
+    .recherche_localisation{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #barre_recherche{
+        border: transparent;
+        width: 60%;
+    }
+
+    .recherche_localisation img{
+        width: 20%;
+    }
+
+    #search_button_desktop{
+        display: none;
+    }
+
+    #search_button_phone{
+        display: flex;
+        width: 20%;
+    }
 
     /************* Filter *******************/
+    .parent_filter{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    
     .type_filter{
+        display: flex;
         justify-content: space-between;
-        /* width: 1%;
-        height: auto; */
     }
     .filter{
-        margin-right: 5px;
+        /* margin-right: 5px; */
+        /* width: 48%; */
+        /* width: 150px; */
+        margin-right: 0px;
+    }
+
+    .button_filter{
+        display: flex;
+        width: 160px;
+    }
+
+    .button_filter:focus{
+        background-color: #DEEBFF;
+    }
+
+    .info_nb_logement{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     /********** Populaires ************/
@@ -581,12 +696,13 @@ footer{
 
     .activity_card{
         width: 85%;
-        max-height: 2%;
+        height: 200px;
+        margin-bottom: 20px;
     }
 
     .activity_img{
         width: 100%;
-        height: auto;
+        height: 80%;
         object-fit: cover;
     }
 
