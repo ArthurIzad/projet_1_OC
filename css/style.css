@@ -118,7 +118,11 @@ header {
 
 /*********** Barre de recherche ****************/
 
-
+/* pour la versin mobile, pour que la barre de recherche prenne tous l'espace */
+/* #barre_recherche {
+    border: transparent;
+    width: -webkit-fill-available;
+} */
 
 .recherche_localisation {
     display: flex ;
@@ -130,7 +134,7 @@ header {
 .form_localisation{
     display: flex;
     border: 2px solid #F2F2F2;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .recherche_localisation img{
@@ -147,6 +151,14 @@ header {
     width: 60%;
     color: black;
     font-size: 7000;
+}
+
+#barre_recherche::-ms-input-placeholder {
+    color: #000000;
+}
+
+#barre_recherche::placeholder {
+    color: #000000;
 }
 
 
@@ -395,7 +407,7 @@ header {
 }
 
 
-/********************** Footer **************************/
+/***************** Footer ******************/
 footer{
     background-color: #D9D9D9;
 }
@@ -427,6 +439,10 @@ footer{
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+    }
+
+    .button_filter:focus{
+        background-color: #DEEBFF;
     }
 
     .hebergements {
@@ -499,6 +515,10 @@ footer{
         padding-right: 15px;
     } */
 
+    .button_filter:focus{
+        background-color: #DEEBFF;
+    }
+
     .main-container{
         margin-left: 0px;
         margin-right: 0px;
@@ -561,6 +581,10 @@ footer{
     .txt_entete{
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .button_filter:focus{
+        background-color: #DEEBFF;
     }
 
     .txt_entete h3{
