@@ -15,7 +15,7 @@
 }
 
 body {
-    margin-top: 0px;
+    /* margin-top: 0px; */
     display: flex;
     justify-content: center;
 }
@@ -90,17 +90,18 @@ header {
     padding-top: 0px;
 }
 
-#hebergement{
+#hebergement_lien{
     padding-right: 50px;
 }
 
 .bouton_header {
-    padding-top: 10px;
-    background-color: transparent;
-    border-color: transparent;
+    padding-top: 4px;
+    border-top: transparent;
 }
+
 .bouton_header:hover {
     color: #0065FC;
+    border-top: solid;
     border-top-color: #0065FC;
 }
 
@@ -128,38 +129,48 @@ header {
     display: flex ;
     align-items: center;
     align-self: flex-end;
-    font-size: 0;
+    /* font-size: 0; */
 }
 
 .form_localisation{
     display: flex;
-    border: 2px solid #F2F2F2;
-    border-radius: 15px;
+    /* border: 2px solid #F2F2F2;
+    border-radius: 15px; */
+    height: 45px;
 }
 
-.recherche_localisation img{
-    width: 10%;
+.recherche_localisation i{
+    width: 15%;
     height: auto;
     border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    color: black;
 }
 
 #barre_recherche{
-    width: 60%;
+    width: 55%;
     font-size: 15px;
     font-weight: 700;
-    border: transparent;
     width: 60%;
     color: black;
-    font-size: 7000;
+    border: 2px solid #F2F2F2;
+    border-right: none;
+    border-left: none;
 }
 
-#barre_recherche::-ms-input-placeholder {
-    color: #000000;
-}
 
 #barre_recherche::placeholder {
-    color: #000000;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
 }
+
+
 
 
 #search_button_desktop{
@@ -168,13 +179,16 @@ header {
     width: 30%;
     height: auto;
     box-shadow: 1px 1px 5px 1px #D9D9D9;
+    background-color: #0065FC;
+    font-weight: 700;
+    color: white;
 }
 
 #search_button_phone{
     display: none;
 }
 
-/**************************** Filtres *********************/
+/*************** Filtres **************/
 
 .parent_filter{
     display: flex;
@@ -201,11 +215,12 @@ header {
     background-color: #DEEBFF;
 }
 
-.button_filter img{
+.button_filter i{
     margin-top: 8px;
     margin-bottom: 8px;
     margin-left: 10px;
     margin-right: 6px;
+    font-size: 18px;
 }
 
 .button_filter b{
@@ -234,8 +249,15 @@ header {
 }
 
 #i_logo{
-    width: 24px;
-    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border: solid #D9D9D9;
+    border-radius: 20px;
+    padding: 5px;
+
 }
 
 #txt_info{
@@ -314,10 +336,16 @@ header {
     margin-bottom: 6px;
 }
 
+
 .ranking_star{
     height: 13.25px;
     width: 14.29px;
-    padding-right: 5px;
+    padding-right: 2px;
+    font-size: 12px;
+}
+
+.empty_star{
+    color: #F2F2F2;
 }
 
 /****** Populaires ***********/
@@ -557,7 +585,7 @@ footer{
         padding-bottom: 10px;
     }
 
-    #hebergement{
+    #hebergement_lien{
         padding-right: 0px;
     }
 
@@ -595,7 +623,7 @@ footer{
 
     /************** Barre de recherche *******/
     .form_localisation{
-        border: 2px solid #F2F2F2;
+        /* border: 2px solid #F2F2F2; */
         border-radius: 20px;
     }
 
@@ -605,12 +633,14 @@ footer{
     }
 
     #barre_recherche{
-        border: transparent;
+        /* border: 2px solid #f2f2f2; */
         width: 60%;
     }
 
-    .recherche_localisation img{
+    #dot{
         width: 20%;
+        background-color: #F2F2F2;
+        /* color: white; */
     }
 
     #search_button_desktop{
@@ -620,6 +650,24 @@ footer{
     #search_button_phone{
         display: flex;
         width: 20%;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        border: 2px solid #F2F2F2;
+        border-right: none;
+        border-left: none;
+        padding: 0px;
+        border-radius: 0% 84% 59% 0% / 10% 43% 49% 10% ;
+    }
+
+    #loupe{
+        width: 100%;
+        height: 100%;
+        border: 2px solid #0065FC;
+        border-radius: 15px;
+
+        background-color: #0065FC;
+        color: white;
     }
 
     /************* Filter *******************/
@@ -653,6 +701,12 @@ footer{
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    #i_logo{
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
 
     /********** Populaires ************/
 

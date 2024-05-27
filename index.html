@@ -21,8 +21,8 @@
             <div class="logo_menu">
                 <img src="image/logo/Booki.png" alt="Le logo de Booki" id = "logo_header">
             <dl id="menu_header">
-                <dt id = "hebergement"><input type="button" value="Hébergement" class="bouton_header"></dt>
-                <dt id = "activite"><input type="button" value="Activités" class="bouton_header"></dt>
+                <dt id="hebergement_lien"><a href="#hebergement" class="bouton_header">Hébergement</a></dt>
+                <dt id="activite_lien"><a href="#activity" class="bouton_header">Activités</a></dt>
             </dl>
             </div>
             <div class=txt_entete>
@@ -34,11 +34,10 @@
         <main>
             <div class="recherche_localisation">
                 <form action="" method="get" class = form_localisation>
-                    <img src="image/logo/search_logo.png" alt="logo de recherche">
+                    <i class="fa-solid fa-location-dot" id="dot"></i>
                     <input type="search" name="barre" id="barre_recherche" placeholder="Localisation">
-                    <input type="image" name="search_button" id="search_button_desktop" alt = "search_button" src = "image/logo/search_button.png">
-                    <input type="image" name="search_button" id="search_button_phone" alt = "search_button" src = "image/logo/loupe_logo.png">
-
+                    <button type="button" id="search_button_desktop" alt = "search_button">Rechercher</button>
+                    <button type="image" name="search_button" id="search_button_phone" alt = "search_button"><i class="fa-solid fa-magnifying-glass" id="loupe"></i></button>
                 </form>
             </div>
             <div class="parent_filter">
@@ -47,29 +46,29 @@
                 </div>
                 <div class="type_filter">
                     <div class="filter" id="economic">
-                        <button type="button" class="button_filter"><img src="image/logo/dollar_logo.png" alt="" class="logo_button_filter"><b>Économique</b></button>
+                        <button type="button" class="button_filter"><i class="filter_logo fa-solid fa-money-bill-wave"></i><b>Économique</b></button>
                     </div>
 
                     <div class="filter" id="family">
-                        <button type="button" class="button_filter"><img src="image/logo/family_logo.png" alt="logo_family" class="filter_logo"><b>Familial</b></button>
+                        <button type="button" class="button_filter"><i alt="logo_family" class="filter_logo fa-solid fa-person"></i><b>Familial</b></button>
                     </div>
 
                     <div class="filter" id="romantic">
-                        <button type="button" class="button_filter"><img src="image/logo/romantic_logo.png" alt="logo_heart" class="filter_logo"><b>Romantique</b></button>
+                        <button type="button" class="button_filter"><i alt="logo_heart" class="filter_logo fa-solid fa-heart"></i><b>Romantique</b></button>
                     </div>
 
                     <div class="filter" id="pepite">
-                        <button type="button" class="button_filter"><img src="image/logo/fire_logo.png" alt="logo_pepite" class="filter_logo"><b>Nos pépites</b></button>
+                        <button type="button" class="button_filter"><i alt="logo_pepite" class="filter_logo fa-solid fa-fire"></i><b>Nos pépites</b></button>
                     </div>
                 </div>
             </div>
             <div class="info_nb_logement">
-                <img src="image/logo/i_logo.png" alt="Information" id = "i_logo">
+                <i src="image/logo/i_logo.png" alt="Information" id = "i_logo" class="fa-solid fa-info"></i>
                 <p id = "txt_info"> Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
             
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergement">
                     <div class="hebergement_title">
                         <h2 class="section-title">Hébergement à Marseille</h2>
 
@@ -82,11 +81,11 @@
                                 <p>Nuit à partir de 52<b>€</b></p>                                
                             </div>
                             <div class="hebergement_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_empty.png" alt="ranking_star_empty" class="ranking_star">
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star empty_star fa-solid fa-star"></i>
                             </div>
                         </div>
 
@@ -97,11 +96,11 @@
                                 <p>Nuit à partir de 96<b>€</b></p>                                
                             </div>
                             <div class="hebergement_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_empty.png" alt="ranking_star_empty" class="ranking_star">
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star empty_star fa-solid fa-star"></i>
                             </div>
                         </div>
 
@@ -112,11 +111,11 @@
                                 <p>Nuit à partir de 76<b>€</b></p>                                
                             </div>
                             <div class="hebergement_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_empty.png" alt="ranking_star_empty" class="ranking_star">
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star empty_star fa-solid fa-star"></i>
                             </div>
                         </div>
 
@@ -127,11 +126,11 @@
                                 <p>Nuit à partir de 46<b>€</b></p>                                
                             </div>
                             <div class="hebergement_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_empty.png" alt="ranking_star_empty" class="ranking_star">
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star empty_star fa-solid fa-star"></i>
                             </div>
                         </div>
 
@@ -142,11 +141,11 @@
                                 <p>Nuit à partir de 25<b>€</b></p>                                
                             </div>
                             <div class="hebergement_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_empty.png" alt="ranking_star_empty" class="ranking_star">
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star empty_star fa-solid fa-star"></i>
                             </div>
                         </div>
 
@@ -157,11 +156,11 @@
                                 <p>Nuit à partir de 23<b>€</b></p>                                
                             </div>
                             <div class="hebergement_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_full.png" alt="ranking_star_full" class="ranking_star">
-                                <img src="image/logo/star_empty.png" alt="ranking_star_empty" class="ranking_star">
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
+                                <i alt="ranking_star_full" class="ranking_star empty_star fa-solid fa-star"></i>
                             </div>
                         </div>                                           
                     </div>
@@ -174,7 +173,7 @@
 
 
 
-                <section class="populaires">
+                <section class="populaires" id="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -204,7 +203,7 @@
                                 <img src="./image/hebergement/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
-                                        <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                                        <h3 class="card-title">Chambres d'hôtes Au cœur de l'eau</h3>
                                         <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
                                     </div>
                                     <div class="card-rating">
@@ -242,7 +241,7 @@
             </div>
 
 
-            <div class="activity">
+            <div class="activity" id="activity">
                 <div class="txt_activity">
                     <h3 class="section-title">Activités à Marseille</h3>
 
