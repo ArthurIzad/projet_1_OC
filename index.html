@@ -8,9 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="js/function.js">
 </head>
@@ -20,12 +18,12 @@
         <header>
             <div class="logo_menu">
                 <img src="image/logo/Booki.png" alt="Le logo de Booki" id = "logo_header">
-            <dl id="menu_header">
-                <dt id="hebergement_lien"><a href="#hebergement" class="bouton_header">Hébergement</a></dt>
-                <dt id="activite_lien"><a href="#activity" class="bouton_header">Activités</a></dt>
-            </dl>
+            <ul id="menu_header" style="list-style-type: none;">
+                <li id="hebergement_lien"><a href="#hebergement" class="bouton_header">Hébergement</a></li>
+                <li id="activite_lien"><a href="#activity" class="bouton_header">Activités</a></li>
+            </ul>
             </div>
-            <div class=txt_entete>
+            <div class="txt_entete">
                 <h3>Trouvez votre Hébergement pour des vacances de rêves</h3>
                 <p>En plein centre-ville ou en pleine nature</p>
             </div>
@@ -36,8 +34,8 @@
                 <form action="" method="get" class = form_localisation>
                     <i class="fa-solid fa-location-dot" id="dot"></i>
                     <input type="search" name="barre" id="barre_recherche" placeholder="Localisation">
-                    <button type="button" id="search_button_desktop" alt = "search_button">Rechercher</button>
-                    <button type="image" name="search_button" id="search_button_phone" alt = "search_button"><i class="fa-solid fa-magnifying-glass" id="loupe"></i></button>
+                    <button type="button" id="search_button_desktop">Rechercher</button>
+                    <button type="button" name="search_button" id="search_button_phone"><i class="fa-solid fa-magnifying-glass" id="loupe"></i></button>
                 </form>
             </div>
             <div class="parent_filter">
@@ -50,20 +48,20 @@
                     </div>
 
                     <div class="filter" id="family">
-                        <button type="button" class="button_filter"><i alt="logo_family" class="filter_logo fa-solid fa-person"></i><b>Familial</b></button>
+                        <button type="button" class="button_filter"><i class="filter_logo fa-solid fa-person"></i><b>Familial</b></button>
                     </div>
 
                     <div class="filter" id="romantic">
-                        <button type="button" class="button_filter"><i alt="logo_heart" class="filter_logo fa-solid fa-heart"></i><b>Romantique</b></button>
+                        <button type="button" class="button_filter"><i class="filter_logo fa-solid fa-heart"></i><b>Romantique</b></button>
                     </div>
 
                     <div class="filter" id="pepite">
-                        <button type="button" class="button_filter"><i alt="logo_pepite" class="filter_logo fa-solid fa-fire"></i><b>Nos pépites</b></button>
+                        <button type="button" class="button_filter"><i class="filter_logo fa-solid fa-fire"></i><b>Nos pépites</b></button>
                     </div>
                 </div>
             </div>
             <div class="info_nb_logement">
-                <i src="image/logo/i_logo.png" alt="Information" id = "i_logo" class="fa-solid fa-info"></i>
+                <i id="i_logo" class="fa-solid fa-info"></i>
                 <p id = "txt_info"> Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
             
@@ -81,11 +79,11 @@
                                 <p>Nuit à partir de 52<b>€</b></p>                                
                             </div>
                             <div class="hebergement_star">
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star empty_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star empty_star fa-solid fa-star"></i>
                             </div>
                         </div>
 
@@ -96,11 +94,11 @@
                                 <p>Nuit à partir de 96<b>€</b></p>                                
                             </div>
                             <div class="hebergement_star">
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star empty_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star empty_star fa-solid fa-star"></i>
                             </div>
                         </div>
 
@@ -111,11 +109,11 @@
                                 <p>Nuit à partir de 76<b>€</b></p>                                
                             </div>
                             <div class="hebergement_star">
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star empty_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star empty_star fa-solid fa-star"></i>
                             </div>
                         </div>
 
@@ -126,11 +124,11 @@
                                 <p>Nuit à partir de 46<b>€</b></p>                                
                             </div>
                             <div class="hebergement_star">
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star empty_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star empty_star fa-solid fa-star"></i>
                             </div>
                         </div>
 
@@ -141,11 +139,11 @@
                                 <p>Nuit à partir de 25<b>€</b></p>                                
                             </div>
                             <div class="hebergement_star">
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star empty_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star empty_star fa-solid fa-star"></i>
                             </div>
                         </div>
 
@@ -156,11 +154,11 @@
                                 <p>Nuit à partir de 23<b>€</b></p>                                
                             </div>
                             <div class="hebergement_star">
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star fa-solid fa-star"></i>
-                                <i alt="ranking_star_full" class="ranking_star empty_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star fa-solid fa-star"></i>
+                                <i class="ranking_star empty_star fa-solid fa-star"></i>
                             </div>
                         </div>                                           
                     </div>
@@ -276,27 +274,25 @@
             <div class="footer_bis">
                 <div class="info_footer">
                     <h3>À propos</h3>
-                    <dl>
-                        <dt>Fonctionnement du site</dt>
-                        <dt>Conditions générales</dt>
-                        <dt>Données et confidentialité</dt>
-    
-    
-                    </dl>
+                    <ul style="list-style-type: none">
+                        <li>Fonctionnement du site</li>
+                        <li>Conditions générales</li>
+                        <li>Données et confidentialité</li>
+                    </ul>
                 </div>
                 <div class="info_footer">
                     <h3>Nos hébergements</h3>
-                    <dl>
-                        <dt>Charte qualité</dt>
-                        <dt>Proposer votre hôtel</dt>
-                    </dl>
+                    <ul style="list-style-type: none">
+                        <li>Charte qualité</li>
+                        <li>Proposer votre hôtel</li>
+                    </ul>
                 </div>
                 <div class="info_footer">
                     <h3>Assistance</h3>
-                    <dl>
-                        <dt>Centre d'aide</dt>
-                        <dt>Nous contacter</dt>
-                    </dl>
+                    <ul style="list-style-type: none">
+                        <li>Centre d'aide</li>
+                        <li>Nous contacter</li>
+                    </ul>
                 </div>
             </div>
         </footer>
