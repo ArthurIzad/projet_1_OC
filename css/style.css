@@ -60,7 +60,7 @@ a {
     color: var(--main-bg-color)
 }
 
-/************* Header ********************/
+/************* Header *****************/
 header {
     display : flex;
     flex-direction: column;
@@ -69,7 +69,6 @@ header {
 #logo_header {
     width: 7%;
     height:fit-content;
-
 }
 
 .logo_menu {
@@ -307,8 +306,6 @@ header {
 
 .txt_hebergement_card{
     margin-left: 8px;
-    
-
 }
 
 .txt_hebergement_card p{
@@ -522,9 +519,7 @@ footer{
     }
 
     /********** Activite ************/
-    .activity_card_global{
-        /* height: 50%; */
-    }
+    
 
 
     .activity_card{
