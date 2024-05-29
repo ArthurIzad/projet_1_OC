@@ -522,20 +522,25 @@ footer{
     }
 
     /********** Activite ************/
+    .activity_card_global{
+        /* height: 50%; */
+    }
+
+
     .activity_card{
         width: 22%;
-        height: 270px;
+        height: 200px;
     }
 
     .activity_img{
         width: 100%;
-        height: 80%;
+        height: 70%;
         object-fit: cover;
     }
     
 
     .activity_card h5{
-        margin-top: 15px;
+        margin-top: 12px;
         font-size: 14px;
     }
 }
