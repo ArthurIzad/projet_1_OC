@@ -95,7 +95,6 @@ header {
 
 .bouton_header {
     padding-top: 4px;
-    border-top: transparent;
 }
 
 .bouton_header:hover {
@@ -641,6 +640,7 @@ footer{
     .form_localisation{
         border-radius: 20px;
         width: -moz-available;
+        width: -webkit-fill-available;
     }
 
     #barre_recherche{
@@ -675,7 +675,6 @@ footer{
         height: 100%;
         border: 2px solid #0065FC;
         border-radius: 15px;
-
         background-color: #0065FC;
         color: white;
     }
