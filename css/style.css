@@ -15,7 +15,7 @@
 }
 
 body {
-    /* margin-top: 0px; */
+    margin-top: 0px;
     display: flex;
     justify-content: center;
 }
@@ -85,7 +85,7 @@ header {
 #menu_header {
     display: flex;
     flex-direction: row;
-    margin-top: 0px;
+    margin-top: 6px;
     padding-top: 0px;
 }
 
@@ -103,7 +103,8 @@ header {
     border-top-color: #0065FC;
 }
 
-.txt_entete h3{
+.txt_entete h1{
+    font-size: 20px;
     margin-top: 40px;
     margin-bottom: 4px;
 }
@@ -129,7 +130,7 @@ header {
 }
 
 .recherche_localisation i{
-    width: 15%;
+    width: 60px;
     height: auto;
     border-radius: 15px 0px 0px 15px;
     display: flex;
@@ -140,10 +141,9 @@ header {
 }
 
 #barre_recherche{
-    width: 55%;
+    width: 100%;
     font-size: 15px;
     font-weight: 700;
-    width: 60%;
     color: black;
     border: 2px solid #F2F2F2;
     border-right: none;
@@ -158,8 +158,6 @@ header {
     align-items: center;
     padding-left: 20px;
 }
-
-
 
 
 #search_button_desktop{
@@ -196,7 +194,7 @@ header {
     border-color: #D9D9D9;
     background-color: transparent;
     border-radius: 30px;
-    border: solid #D9D9D9 3px;
+    border: solid #D9D9D9 2px;
     margin-top: 7px;
 }
 
@@ -243,7 +241,7 @@ header {
     align-items: center;
     width: 15px;
     height: 15px;
-    border: solid #D9D9D9;
+    border: 2px solid #D9D9D9;
     border-radius: 20px;
     padding: 5px;
 
@@ -287,7 +285,6 @@ header {
     border-radius: 20px 20px 20px 20px;
     margin-bottom: 25px;
     margin-top: 15px;
-    justify-content: top;
     box-shadow: 1px 1px 5px 1px #D9D9D9;
     width: 30%;
     height: 50%;
@@ -397,7 +394,10 @@ header {
 .activity_card_global{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+
 }
 
 .activity_card{
@@ -408,16 +408,15 @@ header {
 
 .activity_card h5{
     margin-left: 15px;
-    margin-top: 16px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 12px;
     font-size: 18px;
 }
 
 .activity_img{
     /* width: 297.5px; */
-    /* height: 380px; */
+    height: 380px;
     width: 100%;
-    height: 88%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     padding: 0px 0px 0px 0px;
@@ -427,21 +426,20 @@ header {
 
 /***************** Footer ******************/
 footer{
-    background-color: #D9D9D9;
+    background-color: #f2f2f2;
 }
 
 .footer_bis{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    /* justify-content: space-around; */
     margin-top: 50px;
 }
 
 .info_footer{
     padding-right: 230px;
     padding-left: 20px;
-    background-color: #D9D9D9;
 }
 
 .info_footer ul{
@@ -578,7 +576,7 @@ footer{
 
     #menu_header{
         width: 100%;
-        font: black;
+        /* font: black; */
         margin-top: 30px;
         justify-content: space-around;
         padding-bottom: 10px;
@@ -589,7 +587,7 @@ footer{
 
     #menu_header li{
         width: 100%;
-        font: black;
+        /* font: black; */
         display: flex;
         justify-content: center;
         padding-bottom: 10px;
@@ -609,6 +607,12 @@ footer{
         border-left: transparent;
         border-color: #D9D9D9;
         padding-bottom: 10px;
+    }
+    .bouton_header:hover{
+        color: #0065FC;
+        border-bottom: solid;
+        border-bottom-color: #0065FC;
+        border-top: transparent;
     }
 
     .bouton_header:focus{
@@ -644,14 +648,9 @@ footer{
         width: -webkit-fill-available;
     }
 
-    #barre_recherche{
-        width: 80%;
-    }
 
     #dot{
-        width: 15%;
         background-color: #F2F2F2;
-        /* color: white; */
     }
 
     #search_button_desktop{
@@ -660,7 +659,7 @@ footer{
 
     #search_button_phone{
         display: flex;
-        width: 15%;
+        width: 60px;
         align-items: center;
         justify-content: center;
         background-color: transparent;
@@ -685,22 +684,33 @@ footer{
         margin-left: 20px;
         margin-right: 20px;
         margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #txt_filter{
+        display: flex;
+        align-self: flex-start;
     }
     
     .type_filter{
         display: flex;
         justify-content: space-between;
+        width: 100%;
     }
     .filter{
-        /* margin-right: 5px; */
-        /* width: 48%; */
-        /* width: 150px; */
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        width: 45%;
         margin-right: 0px;
     }
 
     .button_filter{
+        /* width: 160px; */
+        width: 100%;
         display: flex;
-        width: 160px;
+
     }
 
     .button_filter:focus{
@@ -754,8 +764,7 @@ footer{
     
     .hebergements-and-populaires .hebergements{
         background-color: white;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 30px;
     }
 
     .hebergement_card{
@@ -780,10 +789,11 @@ footer{
 
     .activity{
         margin-top: 10px;
+        padding: 30px;
     }
 
     .activity_card{
-        width: 85%;
+        width: 100%;
         height: 200px;
         margin-bottom: 20px;
     }
@@ -799,6 +809,8 @@ footer{
     /********** Footer ************/
     .footer_bis{
         background-color: #D9D9D9;
+        display: flex;
+        flex-direction: column;
     }
 
     
