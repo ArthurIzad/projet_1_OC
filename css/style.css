@@ -305,11 +305,11 @@ header {
 }
 
 .txt_hebergement_card p{
-    margin-top: 10px;
+    margin-top: 8px;
     margin-bottom: 2px;
 }
 
-.txt_hebergement_card b{
+.txt_hebergement_card h3{
     margin-top: 3px;
 }
 
@@ -406,11 +406,11 @@ header {
     box-shadow: 1px 1px 5px 1px #D9D9D9;
 }
 
-.activity_card h5{
+.activity_card h3{
     margin-left: 15px;
     margin-top: 10px;
     margin-bottom: 12px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .activity_img{
@@ -432,8 +432,6 @@ footer{
 .footer_bis{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
     margin-top: 50px;
 }
 
